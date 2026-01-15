@@ -7,29 +7,28 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class AboutUsActivity extends AppCompatActivity {
 
-    Toolbar aboutToolbar;
+public class FeedActivity extends AppCompatActivity {
+
+    Toolbar feedToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_feed);
 
-        aboutToolbar = findViewById(R.id.about_us_toolbar);
-        setSupportActionBar(aboutToolbar);
-        getSupportActionBar().setTitle("About Us");
+        feedToolbar = findViewById(R.id.feed_toolbar);
+        setSupportActionBar(feedToolbar);
+        getSupportActionBar().setTitle("Hazard Information Feed");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
 
     }
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == android.R.id.home){
             super.onBackPressed();
         }
-        return true;
-    }
+        return true;}
 }

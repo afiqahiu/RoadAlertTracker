@@ -7,23 +7,22 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class AboutUsActivity extends AppCompatActivity {
+public class MyProfileActivity extends AppCompatActivity {
 
-    Toolbar aboutToolbar;
+    Toolbar profileToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_my_profile);
 
-        aboutToolbar = findViewById(R.id.about_us_toolbar);
-        setSupportActionBar(aboutToolbar);
-        getSupportActionBar().setTitle("About Us");
+        profileToolbar = findViewById(R.id.my_profile_toolbar);
+        setSupportActionBar(profileToolbar);
+        getSupportActionBar().setTitle("My Profile");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
 
     }
     public boolean onOptionsItemSelected(MenuItem item){
