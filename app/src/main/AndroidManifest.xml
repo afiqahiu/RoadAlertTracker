@@ -14,19 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoadAlertTracker">
         <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HazardFeedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ReportHazardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MapActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
+            android:name=".AboutUsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

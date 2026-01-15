@@ -2,7 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.RoadAlertTracker" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorSecondary">@color/my_light_secondary</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="Theme.RoadAlertTracker" parent="Base.Theme.RoadAlertTracker" />
