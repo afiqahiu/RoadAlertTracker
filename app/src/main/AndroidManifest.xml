@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.roadalerttracker">
 
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyCtIPV6UMm0joQ3SIUKEXaQ-EYVENkELd0" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,22 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoadAlertTracker">
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <!-- SignInActivity as the new launcher -->
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
-
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCtIPV6UMm0joQ3SIUKEXaQ-EYVENkELd0" />
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other activities remain the same -->
         <activity
             android:name=".MapsActivity"
             android:exported="false"
@@ -39,23 +32,17 @@
             android:name=".ReportActivity"
             android:exported="false" />
         <activity
-            android:name=".FeedActivity"
-            android:exported="false" />
-        <activity
             android:name=".MyProfileActivity"
             android:exported="false" />
         <activity
             android:name=".AboutUsActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- MainActivity no longer has the launcher filter -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" /> <!-- Meta-data for Google Maps remains -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCtIPV6UMm0joQ3SIUKEXaQ-EYVENkELd0" />
     </application>
 
 </manifest>

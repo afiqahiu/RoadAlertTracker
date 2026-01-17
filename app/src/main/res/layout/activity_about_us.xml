@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".AboutUsActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -26,67 +27,52 @@
         android:id="@+id/tvDesc"
         android:layout_width="329dp"
         android:layout_height="62dp"
-        android:layout_marginBottom="576dp"
+        android:layout_marginTop="76dp"
         android:text="Road Alert Tracker helps users report, track, and view real-time road hazards using an interactive map and live updates, promoting safer and more informed travel."
+        android:textColorLink="#FF000000"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVersion" />
+
+    <TextView
+        android:id="@+id/tvMembers"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+        android:text="Members:"
         android:textColorLink="#FF000000"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="132dp"
-        android:layout_height="142dp"
+        android:id="@+id/imageView8"
+        android:layout_width="129dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
-        app:layout_constraintVertical_bias="0.467"
-        app:srcCompat="@drawable/afiqah" />
+        app:srcCompat="@drawable/dijah" />
 
     <TextView
-        android:id="@+id/tvMemberDetail"
-        android:layout_width="174dp"
-        android:layout_height="33dp"
-        android:text="Nurulain Afiqah binti Rameli \n2023414652 "
-        android:textAlignment="center"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.034" />
-
-    <TextView
-        android:id="@+id/tvMemberDetail4"
+        android:id="@+id/tvCopyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zukhruful Khadijah Amni binti \nJamnul Azhar \n2023616434"
-        android:textAlignment="center"
-        android:textSize="12sp"
+        android:text="© 2025 ICT602. All rights reserved."
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.047" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="121dp"
-        android:layout_height="142dp"
-        android:layout_marginBottom="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nurina" />
+        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvMemberDetail2"
@@ -98,35 +84,72 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/tvMembers"
-        android:layout_width="75dp"
-        android:layout_height="21dp"
-        android:text="Members:"
-        android:textColorLink="#FF000000"
-        android:textSize="13sp"
+        android:id="@+id/tvMemberDetail"
+        android:layout_width="174dp"
+        android:layout_height="33dp"
+        android:text="Nurulain Afiqah binti Rameli \n2023414652 "
+        android:textAlignment="center"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.006" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="129dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="108dp"
+        android:id="@+id/imageView7"
+        android:layout_width="121dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/dijah" />
+        app:srcCompat="@drawable/nurina" />
+
+    <TextView
+        android:id="@+id/tvMemberDetail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zukhruful Khadijah Amni binti \nJamnul Azhar \n2023616434"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="132dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
+        app:srcCompat="@drawable/afiqah" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="140dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
+        app:layout_constraintVertical_bias="0.507"
+        app:srcCompat="@drawable/naddy" />
 
     <TextView
         android:id="@+id/tvMemberDetail3"
@@ -136,24 +159,11 @@
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.129" />
-
-    <TextView
-        android:id="@+id/tvCopyright"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="© 2025 ICT602. All rights reserved."
-        android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <TextView
         android:id="@+id/textView8"
@@ -164,10 +174,10 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintVertical_bias="0.369" />
 
     <TextView
         android:id="@+id/textView9"
@@ -181,10 +191,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintHorizontal_bias="0.317"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378" />
+        app:layout_constraintVertical_bias="0.398" />
 
     <TextView
         android:id="@+id/textView10"
@@ -195,47 +205,34 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/tvVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Version 1.0"
         android:textColorLink="#FFC941"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="123dp"
         android:layout_height="118dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_toolbar"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="140dp"
-        android:layout_height="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531"
-        app:srcCompat="@drawable/naddy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

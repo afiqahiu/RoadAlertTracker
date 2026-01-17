@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -44,6 +45,11 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.fragment)
     implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-auth:21.0.0")
+    implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation ("com.github.bumptech.glide:glide:5.0.5")
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

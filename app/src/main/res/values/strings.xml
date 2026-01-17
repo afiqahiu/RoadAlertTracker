@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RoadAlertTracker</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_web_client_id">496600310610-6ricql9rvjneuhkuu92n50eqap11k4ar.apps.googleusercontent.com</string>
 </resources>
