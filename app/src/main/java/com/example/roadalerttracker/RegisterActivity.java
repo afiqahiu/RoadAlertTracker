@@ -61,14 +61,13 @@ public class RegisterActivity extends AppCompatActivity {
                         if (user != null) {
                             UserProfileChangeRequest profileUpdates =
                                     new UserProfileChangeRequest.Builder()
-                                            .setDisplayName(username) // 👈 VERY IMPORTANT
+                                            .setDisplayName(username)
                                             .build();
 
                             user.updateProfile(profileUpdates)
                                     .addOnCompleteListener(updateTask -> {
                                         if (updateTask.isSuccessful()) {
-                                            Toast.makeText(this,
-                                                    "Registration successful",
+                                            Toast.makeText(this, "Registration successful",
                                                     Toast.LENGTH_SHORT).show();
 
                                             startActivity(new Intent(this, MainActivity.class));
