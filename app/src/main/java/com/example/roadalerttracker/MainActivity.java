@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, MapsActivity.class));
 
         } else if (v == btnReport) {
-            String url = "http://10.0.2.2/serverside/";
+            String url = "http://10.0.2.2/roadhazardtracker/";
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
             startActivity(intent);
